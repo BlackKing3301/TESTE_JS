@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INTRODUÇÃO JAVA SCRIPT</h1>
+
+    <p>Aprendendo java script</p>
+
+    <input type="text" name="Login" id="Guacamole" placeholder="Insira aqui" onkeyup="validardigitação(this)">
+
+    <input type="text" name="Senha" id="Doritos" placeholder="Digite aqui" onkeyup="validardigitação (this)">
+
+    <button class="" onclick="Exibir()">Entrar</button>
+
+    <div id="IMG-JS"></div>
+    <span id="Café"></span>
+
+    <script>
+        function Exibir () {
+
+            console.log ("E aí familia");
+            alert ("CUIDADO. Você está sendo hackeado!");
+            let tagDiv=document.getElementById ("IMG-JS");
+            tagDiv.innerHTML='<img src="IMG/PP.jpg" alt="">'
+        }
+    </script>
+
+        <script>
+
+            function validardigitação (tag)
+
+            console.log (tag.value);
+            let tagSpan=document.getElementById ("Café");
+            tagSpan.innerHTML=tag.value
+
+        </script>
+
+</body>
+</html>
+
+    
